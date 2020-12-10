@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `MATH10 Project`,
+    description: `Mini web app for my Discrete Mathematics course Project`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -13,11 +13,11 @@ module.exports = {
           {
             resolve: "gatsby-remark-katex",
             options: {
-              strict: "ignore"
-            }
-          }
-        ]
-      }
+              strict: "ignore",
+            },
+          },
+        ],
+      },
     },
     `gatsby-plugin-react-helmet`,
     {

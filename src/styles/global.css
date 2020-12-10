@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  html {
+    @apply bg-coolGray-800;
+    @apply text-coolGray-50;
+  }
+  .nav-link {
+    @apply text-orange-500;
+  }
+}
