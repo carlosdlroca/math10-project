@@ -35,6 +35,9 @@ export default function findLongestSequence(sequence) {
       }
       i = curr - 1
     }
+    // If we have reached the end of the sequence.
+    // We need to update the longesIncreasing/Decreasing
+    // tuples if the current sequence is longer than the last
     if (curr == sequence.length - 1) {
       if (isIncreasing && wasIncreasing) {
         if (curr - i > longestIncreasing[1] - longestIncreasing[0]) {
