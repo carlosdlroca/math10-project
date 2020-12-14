@@ -11,7 +11,7 @@ export default function integerPartitions(print) {
 
   function breakUpPartition(partition, appendPartition = [], noPrint = false) {
     // This is here to prevent double printing
-    noPrint ? null : print(partition, appendPartition)
+    if (!noPrint) print(partition, appendPartition)
     // Find next partition that is not equal to main partition
     let j = 1
     while (partition[j] == partition[0]) j++
@@ -19,7 +19,6 @@ export default function integerPartitions(print) {
     if (j == partition.length) {
       // We have reached the end, thus we finished breaking up the partition.
       return
-      // Will create a double print if all numbers past the first partition are equal to each other
     }
     // Break up the partitions starting from the rightmost partition that is equal to partition[0]
     if (j != 1 && partition[j - 1] == partition[0]) {
