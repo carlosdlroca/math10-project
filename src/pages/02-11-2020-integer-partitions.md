@@ -83,7 +83,23 @@ The function breaks up the partition n-1 times, so at an average case would have
 
 Unfortunately, due to the placement of the print function, some partitions are printed more than once. That is because of the recursive calls jumping back to the last time they were called.
 
-As far as generating unique function, I do not know if it truly generates unique partitions of size n. Anything past the target sum of 15 would generate a lot of partitions for me to check.
+As far as generating unique partitions, I do not know if it truly generates unique partitions. Anything past the target sum of 15 would generate a lot of partitions for me to check.
 
 Also, the print function does not behave properly when used in the app.
 The best way to get more accurate results would be to run the app hosted on my repl <a href="https://repl.it/@aisu_kurimu/integerPartitions-finallySOLVED#index.js" class="text-orange-500 text-3xl">LINK</a>
+
+## How many solutions
+
+The number of solutions to this problem can be found by the $p_k(n)$ with $k$ being the number of parts, and $n$ being the sum.
+
+The recurrence looks like:
+
+$$
+p_k(n) = p_k(n-k) + p_{k-1}(n-1)
+$$
+
+With the base cases: $p_0(0) = 1$ and $p_k(n) = 0$ if $n\leq 0$ or $k\leq 0$
+
+Some other conditions are whenever $n = k$, we know that is one, because there is only one way to partition $n$ $k$ times. That would just look like a $k$ sized partition with $k$ 1s which would all add up to $n$.
+
+Another case would be when $n = k + 1$. That is whenever we want to find all $n-1$ partitions of some $n$. This would look like a 2 followed by $n-2$ 1s, there is only one part you can place the 2, and you cant break it up, so $p_{n-1}(n) = 1$
