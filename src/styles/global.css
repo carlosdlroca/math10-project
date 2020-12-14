@@ -24,6 +24,6 @@
     @apply font-bold text-4xl mt-5 mb-2;
   }
   p {
-    @apply leading-7;
+    @apply leading-7 mb-10;
   }
 }
