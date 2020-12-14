@@ -72,18 +72,20 @@ export default function IntegerPartitions() {
           Get Partitions
         </button>
       </form>
-      <Link
-        to="/integer-partitions-doc"
-        className="text-xl underline text-orange-400 hover:text-white mt-5"
-      >
-        Write up
-      </Link>
-      <a
-        className="text-xl underline text-orange-400 hover:text-white mt-5"
-        href="https://repl.it/@aisu_kurimu/integerPartitions-finallySOLVED#index.js"
-      >
-        Link to more accurate code
-      </a>
+      <section className="flex flex-col">
+        <Link
+          to="/integer-partitions-doc"
+          className="text-xl underline text-orange-400 hover:text-white mt-5"
+        >
+          Write up
+        </Link>
+        <a
+          className="text-xl underline text-orange-400 hover:text-white mt-5"
+          href="https://repl.it/@aisu_kurimu/integerPartitions-finallySOLVED#index.js"
+        >
+          Link to more accurate code
+        </a>
+      </section>
       <DisplayIntegerPartitions partitions={state.partitions} />
     </div>
   )
