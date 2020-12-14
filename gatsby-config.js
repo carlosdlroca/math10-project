@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `MATH10 Project`,
     description: `Mini web app for my Discrete Mathematics course Project`,
-    author: `@gatsbyjs`,
+    author: `@carlosdelaroca`,
   },
   plugins: [
     "gatsby-plugin-postcss",
