@@ -16,7 +16,7 @@ export default function Template({ data }) {
           Home
         </Link>
         <div
-          className="blog-post-content w-11/12 lg:max-w-5xl mx-auto bg-white text-coolGray-800 p-4"
+          className="blog-post-content w-11/12 lg:max-w-5xl mx-auto bg-white text-coolGray-800 p-1 md:p-4"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </div>
