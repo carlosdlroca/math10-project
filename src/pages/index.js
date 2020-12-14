@@ -1,7 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 import LargestSubsequence from "../components/LargestSubsequence"
-
+import IntegerPartitions from "../components/IntegerPartition"
 const IndexPage = () => (
   <>
     <SEO title="Home" />
@@ -10,6 +10,7 @@ const IndexPage = () => (
     </h1>
 
     <LargestSubsequence />
+    <IntegerPartitions />
   </>
 )
 
